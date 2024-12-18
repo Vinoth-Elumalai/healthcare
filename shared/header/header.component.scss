@@ -1,0 +1,92 @@
+.app-toolbar {
+    color: black;
+    background-color: white;
+    box-shadow: none;
+  
+    .flex-grow {
+      flex-grow: 1;
+    }
+  
+    .header-notification-container {
+      display: flex;
+      align-items: center;
+  
+      .badge-bg {
+        mat-badge {
+          background-color: #ff9800;
+          color: white;
+        }
+      }
+  
+      button {
+        mat-icon {
+          font-size: 26px;
+        }
+      }
+    }
+  
+    .divider {
+      width: 1px;
+      height: 40px;
+      background-color: #ccced1;
+      margin: 0 24px;
+    }
+
+    .icon {
+      color: red;
+      background-color: yellow;
+    }
+  
+    .header-profile-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 220px;
+  
+      .profile-info {
+        text-align: right;
+  
+        .user-name {
+          font-weight: bold;
+        }
+  
+        .user-status {
+          display: flex;
+          align-items: center;
+  
+          .green-dot {
+            height: 9px;
+            width: 9px;
+            border-radius: 50%;
+            background-color: green;
+            margin-right: 6px;
+          }
+  
+          .status-text {
+            font-size: 14px;
+          }
+        }
+      }
+  
+      .account-btn {
+        .account-icon {
+          font-size: 50px;
+        }
+      }
+  
+      .settings-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccced1;
+        border-radius: 50%;
+        padding: 6px;
+  
+        .settings-icon {
+          font-size: 24px;
+          color: #666;
+        }
+      }
+    }
+  }
+  

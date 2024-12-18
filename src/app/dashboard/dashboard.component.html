@@ -1,0 +1,13 @@
+<div>
+  <div style="display: flex; justify-content: space-between; margin-top: 30px">
+    <app-custom-card
+      *ngFor="let card of cardContent; let i = index"
+      [card]="card"
+      [index]="i"
+      [selectedCard]="selectedCard"
+      (cardClick)="handleCardClick($event)"
+      style="width: 23%"
+    ></app-custom-card>
+  </div>
+  <app-table></app-table>
+</div>

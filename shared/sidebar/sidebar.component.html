@@ -1,0 +1,48 @@
+<div class="sidebar-wrapper">
+  <mat-toolbar
+    color="primary"
+    style="height: 70px; width: 100%; display: flex; justify-content: center"
+  >
+    <span
+      style="
+        font-size: 26px;
+        font-weight: 800;
+        text-align: center;
+        color: black;
+      "
+      >Healthcare</span
+    >
+  </mat-toolbar>
+
+  <mat-divider></mat-divider>
+
+  <mat-nav-list>
+    <ng-container *ngFor="let item of sidebarItems">
+      <mat-list-item
+        (click)="navigate(item.route)"
+        style="cursor: pointer; padding: 10px"
+        class="list-item"
+      >
+        <fa-icon [icon]="faBell"></fa-icon>
+        <span matLine style="padding: 10px">{{ item.name }}</span>
+      </mat-list-item>
+    </ng-container>
+  </mat-nav-list>
+
+  <h6 style="font-size: 13px; margin: 10px 8px 8px 8px; color: black">
+    APPLICATIONS
+  </h6>
+
+  <mat-nav-list>
+    <ng-container *ngFor="let item of sidebarApplications">
+      <mat-list-item
+        (click)="navigate(item.route)"
+        style="cursor: pointer; padding: 10px"
+        class="list-item"
+      >
+        <fa-icon [icon]="faBell"></fa-icon>
+        <span matLine style="padding: 10px">{{ item.name }}</span>
+      </mat-list-item>
+    </ng-container>
+  </mat-nav-list>
+</div>

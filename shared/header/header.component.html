@@ -1,0 +1,35 @@
+<mat-toolbar color="primary" [style.height]="'70px'" class="app-toolbar">
+  <div class="flex-grow"></div>
+
+  <!-- Notifications and Messages -->
+  <div class="header-notification-container">
+    <button mat-icon-button>
+      <fa-icon [icon]="faBell"></fa-icon>
+    </button>
+
+    <button mat-icon-button>
+      <fa-icon [icon]="faEnvelope"></fa-icon>
+    </button>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- User Profile -->
+  <div class="header-profile-container">
+    <div class="profile-info">
+      <span class="user-name">{{ userName }}</span>
+      <div class="user-status">
+        <div class="green-dot"></div>
+        <span class="status-text">{{ userStatus }}</span>
+      </div>
+    </div>
+
+    <button mat-icon-button class="account-btn">
+      <fa-icon [icon]="faCircleUser"></fa-icon>
+    </button>
+
+    <div class="settings-wrapper">
+      <fa-icon [icon]="faGear"></fa-icon>
+    </div>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,23 @@
+mat-toolbar {
+  text-align: center;
+  font-weight: 800;
+}
+
+mat-list-item {
+  margin: 0;
+}
+
+h6 {
+  margin: 8px;
+  color: #757575; /* Use a variable or color matching your theme */
+}
+
+.list-item:hover {
+  background-color: #D6E7EE;
+  color:"black";
+  border-radius: 5px;
+}
+
+.sidebar-wrapper {
+  width: 100%;
+}
