@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="sub-container">
+        <div class="chart-title">
+            <h3>Patient Overview</h3>
+            <ul class="time-late">
+                <li>On Time</li>
+                <li>On Late</li>
+            </ul>
+        </div>
+        <div class="ag-chart-container">
+            <ag-charts [options]="options"></ag-charts>
+        </div>
+
+    </div>
+    <div>
+        <full-calendar [options]="calendarOptions" [deepChangeDetection]="true">
+            <ng-template #eventContent let-arg>
+                <b>{{arg.timeText}}</b>
+                <i>{{arg.event.title}}</i>
+            </ng-template>
+        </full-calendar>
+    </div>
+</div>

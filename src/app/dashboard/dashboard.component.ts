@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../../../shared/header/header.component';
 import { CardComponent } from '../../../shared/card/card.component';
 import { TableComponent } from '../../../shared/table/table.component';
+import { PatientOverviewChartComponent } from '../patient-overview-chart/patient-overview-chart.component';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, CardComponent, TableComponent],
+  imports: [CommonModule, HeaderComponent, CardComponent, TableComponent, PatientOverviewChartComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
